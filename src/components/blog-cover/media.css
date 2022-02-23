@@ -1,0 +1,15 @@
+@media (max-width: 520px) {
+    .blog-cover {
+        width: 350px;
+        height: 300px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    .blog-cover {
+        width: 265px;
+        height: 322px;
+    }
+}
+

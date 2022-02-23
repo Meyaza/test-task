@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Navigation} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './slider.css';
+import './media.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -41,8 +42,8 @@ const Slider = () => {
                 slidesPerView={1}
                 navigation = {
                     {
-                        nextEl : '.right',
-                        prevEl : '.left'
+                        nextEl : '.rightArrow',
+                        prevEl : '.leftArrow'
                     }
                 }
             >
@@ -53,9 +54,15 @@ const Slider = () => {
                                     <p>
                                        {slide.text}
                                     </p>
-                                    <p className='slide-name'>
-                                       {slide.name}
-                                    </p>
+                                    <div className='user'>
+                                        <p className='slide-name'>
+                                        {slide.name},
+                                        </p>
+                                        <p className='slide-instagram'>
+                                        {slide.instagram_username} 
+                                        </p>
+
+                                    </div>
                                </div>
                                <div className='slide-avatar'/>
                            </div>
@@ -64,8 +71,8 @@ const Slider = () => {
             </Swiper>
             }
             <div className='navigation'>
-                <div className='left'> <div className='swiper-button-prev'></div> </div>
-                <div className='right'> <div className='swiper-button-next'> </div></div> 
+                <div className='leftArrow'> <div className='swiper-button-prev'></div> </div>
+                <div className='rightArrow'> <div className='swiper-button-next'> </div></div> 
             </div>
         </div>    
     );

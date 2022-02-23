@@ -1,0 +1,23 @@
+@media (max-width: 520px) {
+    .blog-item {
+        width: 370px;
+        height: 500px;
+    }
+    .blog-text {
+        font-size: 24px;
+        margin: 40px 40px 20px 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blog-item {
+        width: 296px;
+        height: 430px;
+        margin-top: 12px;
+        margin-right: 0;
+    }
+    .blog-text {
+        font-size: 15px;
+        margin: 0 40px 20px 40px;
+    }
+}

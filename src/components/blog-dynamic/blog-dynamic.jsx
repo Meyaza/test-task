@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import BlogItem from '../blog-item/blog-item';
 import './blog-dynamic.css'
+import './meida.css';
 
 const BlogDynamic = () => {
     const [isBlogShow, setisBlogShow] = useState(false);

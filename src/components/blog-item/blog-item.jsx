@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogCover from '../blog-cover/blog-cover';
 import './blog-item.css';
+import './media.css';
 
 const BlogItem = ({href, image, p}) => {
     return (

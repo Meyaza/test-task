@@ -1,0 +1,23 @@
+@media (max-width: 520px) {
+    .blog-item__dynamic {
+        width: 370px;
+        height: 500px;
+        margin-top: 24px;
+        margin-right: 0;
+    }
+    .blog-text__dynamic {
+        font-size: 15px;
+        margin: 0 40px 20px 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blog-item__dynamic {
+        width: 296px;
+        height: 422px;
+        margin-top: 36px; 
+    }
+    .blog-text__dynamic {
+        font-size: 15px;
+    }
+}

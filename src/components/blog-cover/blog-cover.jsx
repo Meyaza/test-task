@@ -1,5 +1,6 @@
 import React from 'react';
-import './blog-cover.css'
+import './blog-cover.css';
+import './media.css';
 
 const BlogCover = ({image = ''}) => {
     return (

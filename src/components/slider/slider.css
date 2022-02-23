@@ -1,9 +1,13 @@
 .bg-head {
-  width: 1416px;
-  height: 700px;
+  position: relative;;
+  width: 100%;
+  min-height: 700px;
   background: #6527D9;
   border-radius: 12px;
+  font-family: ProximaNova, serif;
 }
+
+
 
 .slide-content {
   display: flex;
@@ -31,21 +35,33 @@
   
 }
 
-.slide-name {
-  color: white;
-  font-size: 24px;
+.user {
+  display: flex;
   margin-top: 32px;
 }
 
+.slide-name {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slide-instagram {
+  color: white;
+  font-size: 24px;
+  
+  margin-left: 15px;
+  font-family: ProximaNova-light, serif;
+}
 
 .navigation {
   display: flex;
   position: absolute;
-  right: 350px;
-  bottom: 330px;
+  right: 100px;
+  bottom: 100px;
 }
 
-.right {
+.rightArrow {
   width: 50px;
   height: 50px;
   background-color: rgba(99, 114, 130, 0.034);
@@ -53,7 +69,7 @@
   font-size: 5px;
 }
 
-.left {
+.leftArrow {
   width: 50px;
   height: 50px;
   background-color: rgba(99, 114, 130, 0.034);
