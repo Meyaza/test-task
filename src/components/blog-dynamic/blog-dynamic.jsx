@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import './blog-dynamic.css'
 import { IoIosArrowDown } from 'react-icons/io';
-import BlogCover from '../blog-cover/blog-cover';
+import BlogItem from '../blog-item/blog-item';
+import './blog-dynamic.css'
 
 const BlogDynamic = () => {
-
     const [isBlogShow, setisBlogShow] = useState(false);
     const [blogs, setBlogs] = useState([])
-   
     const handleClick = async() => {
         setisBlogShow (!isBlogShow)
         await fetch('blog_posts.json')
@@ -20,25 +18,24 @@ const BlogDynamic = () => {
     }
     return (
         <div className='blog-dynamic'>
-                        <div onClick = {handleClick} className='read'>
-                            <p>Read More </p> 
-                            <IoIosArrowDown/>
-                        </div>
+            <div onClick = {handleClick} className='read'>
+                <p>Read More </p> 
+                <IoIosArrowDown/>
+            </div>
             {isBlogShow === false
             ? null
-            : <div className='blog-dynamic'>
+            : 
+            <div className='blog-dynamic'>
                 {blogs.map (blog => 
-                     <div className='blog-item__dynamic'>
-                     <a href= {blog.url} target="_blank" rel="noreferrer">
-                         <div className='blog-text__dynamic'>
-                         {blog.title}
-                         </div>
-                     </a>
-                     </div>
+                    <div key= {blog.title} className='blog-item__dynamic'>
+                        <BlogItem 
+                            href= {blog.url}
+                            image = '/static/image/desktop/img1.png'
+                            p = {blog.title}
+                        />
+                    </div>
                 )}
-             
             </div>
-            
             }
         </div>
     );

@@ -6,8 +6,8 @@ import './blog.css'
 const Blog = () => {
     return (
         <div className='section-1'>
-        <BlogStatic/>
-        <BlogDynamic/>
+          <BlogStatic/>
+          <BlogDynamic/>
       </div>
     );
 };

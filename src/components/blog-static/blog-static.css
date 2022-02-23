@@ -1,12 +1,10 @@
 .head {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 48px;
-    color: #212353;
-    font-weight: 400;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 48px;
+  color: #212353;
+  font-weight: 400;
 }
-
-
 
 .blog {
   display: flex;
@@ -15,34 +13,3 @@
   justify-content: center;
 }
 
-.blog-item {
-  width: 464px;
-  height: 650px;
-  background: white;
-  border-radius: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
-.blog-item2 {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.blog-text {
-  font-size: 24px;
-  font-weight: 300;
-  max-width: 384px;
-  height: 111px;
-  margin: 21px 40px 20px 40px;
-  display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
-
-a {
-  text-decoration:none;
-  color: #262626;
-
-}
